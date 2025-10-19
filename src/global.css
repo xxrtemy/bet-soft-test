@@ -1,0 +1,17 @@
+html,
+body,
+#root {
+  font-family: 'Roboto', sans-serif;
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+#root {
+  margin: 10px 20px;
+}
+h1,
+p {
+  margin: 0;
+}
