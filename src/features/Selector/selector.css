@@ -1,0 +1,68 @@
+.select {
+  position: relative;
+}
+
+.select__wrapper {
+  padding: 20px;
+  background: #1c1c1c;
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.select__label {
+  font-size: 14px;
+  font-weight: 700;
+  min-width: 100px;
+}
+
+.select__button {
+  background: #232323;
+  color: #fff;
+  border: 1px solid #ba8e47;
+  padding: 5px 10px;
+  min-width: 140px;
+  min-height: 40px;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: capitalize;
+}
+
+.select__list {
+  position: absolute;
+  top: calc(100% + 4px);
+  width: 140px;
+  background: #1a1a1a;
+  border: 1px solid #ba8e47;
+  border-radius: 4px;
+  list-style: none;
+  margin: 0;
+  padding: 4px 0;
+  z-index: 10;
+  max-height: 200px;
+  overflow-y: auto;
+  text-transform: capitalize;
+}
+
+.select__list li {
+  padding: 8px 12px;
+  cursor: pointer;
+  color: #fff;
+  transition: background 0.2s ease;
+}
+
+.select__list li:hover {
+  background-color: #ba8e47;
+  color: #000;
+}
+
+.select__list li.active {
+  background-color: #ba8e47;
+  color: #000;
+  font-weight: 600;
+}

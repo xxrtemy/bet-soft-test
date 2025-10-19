@@ -1,0 +1,12 @@
+.games__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(191px, 1fr));
+  align-content: start;
+  justify-content: start;
+  column-gap: 20px;
+  row-gap: 10px;
+}
+.games__tittle {
+  font-size: 16px;
+  font-weight: 700;
+}
