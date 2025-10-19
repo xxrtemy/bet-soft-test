@@ -1,4 +1,5 @@
 import { useCallback, useMemo, useState } from 'react';
+
 import { Card } from './components';
 import { Flex, useInfiniteScroll } from '../../shared';
 import './products.css';

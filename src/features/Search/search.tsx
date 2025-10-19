@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import type { FormEvent, ChangeEvent } from 'react';
+
 import './search.css';
 import type { SearchProps } from './types';
 
@@ -15,7 +16,11 @@ export const Search = ({
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     const v = e.target.value;
-    value === undefined && setInnerValue(v);
+
+    if (value === undefined) {
+      setInnerValue(v);
+    }
+
     onChange?.(v);
   };
 

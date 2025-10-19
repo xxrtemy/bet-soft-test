@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
+
 import type { SelectorProps } from './types';
 import { getUniqueGameTypes } from '../../shared';
 import './selector.css';

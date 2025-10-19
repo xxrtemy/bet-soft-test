@@ -1,4 +1,5 @@
 import React, { type CSSProperties } from 'react';
+
 import type { FlexProps } from './types';
 
 /**
